@@ -1,38 +1,85 @@
 .App {
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-header {
+  background-color: black;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.feature-section {
+  padding: 10px 100px;
+  border-bottom: 1px solid #282c34;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  list-style: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.theme-example {
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+.theme-example p {
+  margin: 0;
+}
+
+.blue-container {
+  background-color: #007bff;
+  color: white;
+}
+
+.pink-container {
+  background-color: hotpink;
+  color: white;
+}
+
+#modal-example .pink-secondary-button,
+#app-container .pink-secondary-button {
+  background-color: pink;
+  color: black;
+}
+
+#modal-example .pink-secondary-button:active,
+#modal-example .pink-secondary-button:focus,
+#modal-example .pink-secondary-button:hover,
+#app-container .pink-secondary-button:active,
+#app-container .pink-secondary-button:focus,
+#app-container .pink-secondary-button:hover {
+  border: 1px solid grey;
+  background-color: lightpink;
+  color: black;
+}
+
+#modal-example .pink-primary-button,
+#app-container .pink-primary-button {
+  background-color: hotpink;
+  border: 1px solid grey;
+  color: black;
+}
+
+#modal-example .pink-primary-button:active,
+#modal-example .pink-primary-button:focus,
+#modal-example .pink-primary-button:hover,
+#app-container .pink-primary-button:active,
+#app-container .pink-primary-button:focus,
+#app-container .pink-primary-button:hover {
+  background-color: deeppink;
+  border: 1px solid grey;
+  color: black;
 }

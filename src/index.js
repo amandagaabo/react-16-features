@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { ThemeContextProvider } from "./ThemeContext";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ThemeContextProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </ThemeContextProvider>,
   document.getElementById('root')
 );
 
