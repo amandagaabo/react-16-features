@@ -20,11 +20,11 @@ function FragmentWithColors () {
 
 function FragmentShorthandWithColors () {
   return (
-    <Fragment>
+    <>
       <li key="1">Orange</li>
       <li key="2">Yellow</li>
       <li key="3">White</li>
-    </Fragment>
+    </>
   )
 }
 

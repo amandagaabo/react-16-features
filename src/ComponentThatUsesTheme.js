@@ -10,7 +10,6 @@ function ComponentThatUsesTheme () {
             </div>
         )}
     </ThemeContextConsumer>
-
   );   
 }
 

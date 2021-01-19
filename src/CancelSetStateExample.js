@@ -34,12 +34,9 @@ class CancelSetStateExample extends React.Component {
 }
 
 class DontCancelSetStateExample extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      buttonClicked: ''
-    };
-  }
+  state = {
+    buttonClicked: ''
+  };
 
   handleButtonClick = event => {
     this.setState({ buttonClicked: event.target.value})
